@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	</head>
+	<body>
+		<div id="clock">
+			<span data-bind="text: mainMessage"></span>
+			<span data-bind="text: countDown"></span>
+		</div>
+		<div id="cards" data-bind="foreach: cards"> 
+			<div id="card" data-bind="click: $parent.registerClick">
+				<span data-bind="text: value"></span>				
+			</div>			
+		</div>
+		
+		<script src="js/knockout-3.2.0.js"></script>
+		<script src="js/model.js"></script>
+	</body>
+</html>
